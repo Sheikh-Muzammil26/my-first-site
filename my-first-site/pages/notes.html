@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML notes</title>
     <style>
+        body{
+            margin: 50px;
+            border:40px;
+            background-color:silver;
+            padding: 15px;
+        }
+        footer{
+            color:aliceblue;
+            text-align: center;
+            background-color: black;
+            padding: 1%;
+            position:relative;
+        }
+        
       pre{
         
         text-align: var(100%);
@@ -81,7 +95,7 @@ initial-scale=1.0 → পেজ লোড হওয়ার সময় জুম �
 
  🧩 title: ওয়েবসাইটের url এর উপরের দিকে একটি শিরোনাম দেয়া হয়। তাকে বলে টাইটেল । এখানে কেউ কেউ আইকন দেন। যাকে বলে favicon. এটা দেয়ার নিয়ম হলো, link লিখে ট্যাবে ক্লিক করব। সাথে সাথে ভিতরে দুটি এট্রিবিউট আসবে। প্রথমটিতে দিব icon আর ২য় টি ভেলু হিসেবে সেই আইকনের লোকেশন বলে দিব যেভাবে ইমেইজের লোকেশন বলে দিতে হয়। এজন্য আগে একটা আইকন ডাউনলোড করে নেয়া যায়। 
  <link rel="icon" href="">
- 
+
 🎯 কাজের ফলাফল:
 
 ✅ পেজ মোবাইলে খুললে লেখা, ছবি ও বাটনগুলো স্ক্রিনের সাথে মানিয়ে যায়।
@@ -237,10 +251,7 @@ form এর আরেকটি ট্যাগ হচ্ছে select tag . এ�
  
   </main>
 
-  <footer>
-
-  </footer>
-
+  
     <h1 style="text-align: center;"><b>আমাদের আঙ্গিনায় আপনাকে স্বাগতম</b></h1>
     <h2>নিচের প্যারাগ্রাপে আপনি জানতে পারবেন প্রয়োজনীয় সকল ট্যাগ সম্পর্কে</h2>
      <iframe src="practice_all_code.php" height="100px" width="100%"></iframe><br><br>
@@ -253,4 +264,12 @@ form এর আরেকটি ট্যাগ হচ্ছে select tag . এ�
 
    website for validation:   <br><br>
    <iframe width="560" height="315" src="https://www.youtube.com/embed/mgO9ObbVeJ8?si=ftnnOxJuDPHP6LnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</html>
+
+   <footer>
+    <p id="date-time"></p>
+    <script>
+        document.getElementById("date-time").innerHTML = new Date();
+    </script>
+  </footer>
+
+   </html>
